@@ -1,0 +1,112 @@
+/* 
+使用图片做背景，实现大小自适应
+body {
+    background-image: url("/images/background/background.png");
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    p
+    osition: absolute;
+}*/
+
+body{
+    /* 设置背景渐变 */ /* 太好看了！真是绝绝子 */
+    background-image: linear-gradient(to left,
+    #9c88ff,#3cadeb);
+    /* 会让所有子元素按弹性box布局 */
+    /* display: flex; */
+    /* 可以让下级元素居中？*/
+    /*justify-content: center;*/
+}
+
+/**********顶部导航栏**********/
+header {
+    background-color: rgb(255, 255, 255);
+    /*text-align: center;*/
+    padding: 0px;
+    border-radius: 15px;
+}
+
+.nav li{
+    display: inline-block;
+    /*margin的顺序是上右下左*/
+    margin: 20px 20px 20px 0px;
+}
+
+/**********左边侧栏**********/
+#sidebar-left-content .shell{
+    width: 100px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    transition: .3s;
+    overflow: hidden;
+}
+
+#sidebar-left-content .box {
+    display: block;
+    height: 15%;
+    width: 85%;
+    margin: 9px;
+    border-radius: 5px;
+    position: relative;
+    transition: .3s;
+    color: rgb(20, 20, 20);
+}
+
+#sidebar-left-content .box i {
+    font-size: 60px;
+    position: absolute;
+    margin: 7px 0 0 13px;
+}
+
+.box:nth-child(1)::before, /* 分隔侧边导航栏 */
+.box:nth-child(5)::before {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: rgb(20, 20, 20);
+    position: absolute;
+    bottom: -10px; /* 这个是将该元素置于其标签所包含的元素底部往上{n}px */
+}
+
+.box span {
+    position: relative;
+    top: 22px;
+    left: 80px;
+    font: 500 20px '';
+    opacity: 0; /* 当发生hover，再将opacity设为1 */
+    transition: .1s;
+}
+
+#sidebar-left-content .shell:hover {
+    width: 270px;
+}
+
+#sidebar-left-content .box:hover {
+    background-color: rgb(210, 210, 210);
+}
+
+#sidebar-left-content .shell:hover span {
+    opacity: 1;
+}
+
+/**********中间聊天区**********/
+.flex {
+    display: flex;
+}
+
+.main-page .content {
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 1000px;
+    height: 700px;
+    margin: 0 0 0 20px;
+    border-radius: 8px;
+}
