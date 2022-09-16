@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="../static/css/signin.css">
+</head>
+<body>
+    <div class="box">
+        <h2>Login</h2>
+        <form action="/signin" method="post">
+            <div class="input-box">
+                <label>账号</label>
+                <input type="Email" name="Email" placeholder="Email">
+            </div>
+            <div class="input-box">
+                <label>密码</label>
+                <input type="Password" name="Password" placeholder="Password">
+            </div>
+            <div class="btn-box">
+                <a href="#">忘记密码？</a>
+                <div>
+                    <button type="submit">登录</button>
+                    <button>注册</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

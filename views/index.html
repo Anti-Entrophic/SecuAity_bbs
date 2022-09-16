@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>SecurAity</title>
+        <!--引入bootstrap-5.0.2-->
+        <link
+            href="..\static\css\bootstrap\bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous"
+        />
+        <!--字体
+        <link href="http://fonts.googleapis.com/css?family=Josefin+Slab:400,700" rel="stylesheet" type="text/css"/>
+        -->
+        <!--一些bootstrap之上的自定义修改-->
+        <link rel="stylesheet" href="static\css\style.css" />
+    </head>
+
+    <body font-family="Georia,serif">  
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+            <div class="container">
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navmenu"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <a href="#" class="navbar-brand" font-family="Georia,serif">SecurAity</a>
+
+                <div class="collapse navbar-collapse" id="navmenu">
+                    
+                    <ul class="navbar-nav ms-auto" style="margin-right: 10px;">
+                        
+                        <!--margin start = margin left-->
+        
+                        <li class="nav-item">
+                            <div class="nav-link">功能1</div>
+                        </li>
+                        <li class="nav-item">
+                            <div class="nav-link">功能2</div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" 
+                                data-bs-toggle="dropdown" aria-expanded="false"
+                            >功能3
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">3.1</a></li>
+                                <li><a class="dropdown-item" href="#">3.2</a></li>
+                                <li><a class="dropdown-item" href="#">3.3</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        
+        <section class="p-5 bg-dark text-light text-center text-sm-start" style="margin-top: 50px;">
+            <!--padding -->
+            <div class="container">
+                <div class="d-flex">
+                    <!--display flex-->
+                    <div class="text-center">
+                        <h1> 
+                            <br>
+                            <br>
+                            进入<span class="text-warning">SecurAity</span>学生讨论社区
+                            <br>
+                            <br>
+                            <br>
+                        </h1>
+                        <p class="my-4">
+                            <!-- margin-top margin-bottom -->
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Doloremque corporis quo, similique perferendis
+
+                            distinctio non eius consequuntur error obcaecati
+                            quaerat iusto quos fugiat rerum, unde omnis
+                            
+                            blanditiis ducimus asperiores quibusdam? Maiores nam
+                            deserunt earum exercitationem eligendi,
+                        </p>
+                        <button class="btn btn-primary btn-lg">
+                            <a href="/signin" style="color:white; text-decoration:none" >进入学生社区</a>
+                        </button>
+                    </div>
+                    <!--
+                    <img
+                        src="./img/showcase.svg"
+                        alt="showcase"
+                        class="w-50 d-none d-md-block"
+                    />
+                    -->
+                </div>
+            </div>
+        </section>
+
+        
+        <section class="p-5 bg-primary text-light">
+            <div class="container">
+                <div
+                    class="d-md-flex justify-content-between align-items-center"
+                >
+                    <h3 class="mb-3">随便写点拉丁文就会看起来很高大上</h3>
+                    <div class="input-group news-input">
+                        <input
+                            type="text"
+                            class="form-control"
+                            placeholder="Sodayo"
+                        />
+                        <button class="btn btn-dark btn-lg">点击</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section class="p-5">
+            <div class="container">
+                <div class="row g-4">
+                    <!--gap-->
+                    <div class="col-md">
+                        <div class="card bg-dark text-light">
+                            <div class="card-body text-center">
+                                <div class="card-title">我还要学</div>
+                                <div class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur,
+                                    adipisicing elit. Minus voluptatibus
+                                    consequuntur vitae quo quibusdam
+                                </div>
+                                <a href="#" class="btn btn-primary mt-2"
+                                    >Hello World</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card bg-secondary text-light">
+                            <div class="card-body text-center">
+                                <div class="card-title">我还能学</div>
+                                <div class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur,
+                                    adipisicing elit. Minus voluptatibus
+                                    consequuntur vitae quo quibusdam
+                                </div>
+                                <a href="#" class="btn btn-dark mt-2"
+                                    >Hello World</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="card bg-dark text-light">
+                            <div class="card-body text-center">
+                                <div class="card-title">我还想学</div>
+                                <div class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur,
+                                    adipisicing elit. Minus voluptatibus
+                                    consequuntur vitae quo quibusdam
+                                </div>
+                                <a href="#" class="btn btn-primary mt-2"
+                                    >Hello World</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="p-5">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-md">
+                        <img src="..\static\images\slide-1.jpg" alt="1" class="img-fluid" />
+                    </div>
+                    <div class="col-md p-5">
+                        <h2>Title</h2>
+                        <p class="lead">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Praesentium ea ratione corporis et provident.
+                            Quia!
+                        </p>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Amet nostrum, aperiam assumenda vitae, beatae
+                            at sint quaerat consequatur maxime, hic voluptatum
+                            ex. Dolor minus perferendis magni autem
+                            exercitationem quis quos.
+                        </p>
+                        <a href="" class="btn btn-light">查看更多</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="p-5 bg-dark text-light">
+            <div class="container">
+                <div class="row align-items-center justify-content-between">
+                    <div class="col-md p-5">
+                        <h2>Title</h2>
+                        <p class="lead">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing
+                            elit. Praesentium ea ratione corporis et provident.
+                            Quia!
+                        </p>
+                        <p>
+                            Lorem, ipsum dolor sit amet consectetur adipisicing
+                            elit. Amet nostrum, aperiam assumenda vitae, beatae
+                            at sint quaerat consequatur maxime, hic voluptatum
+                            ex. Dolor minus perferendis magni autem
+                            exercitationem quis quos.
+                        </p>
+                        <a href="" class="btn btn-light">查看更多</a>
+                    </div>
+
+                    <div class="col-md">
+                        <img src="..\static\images\slide-3.jpg" alt="1" class="img-fluid" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="p-5">
+            <div class="container">
+                <h2 class="text-center">手风琴菜单demo</h2>
+                <div
+                    class="accordion accordion-flush"
+                    id="accordionFlushExample"
+                >
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingOne">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseOne"
+                                aria-expanded="false"
+                                aria-controls="flush-collapseOne"
+                            >
+                                Accordion Item #1
+                            </button>
+                        </h2>
+                        <div
+                            id="flush-collapseOne"
+                            class="accordion-collapse collapse show"
+                            aria-labelledby="flush-headingOne"
+                            data-bs-parent="#accordionFlushExample"
+                        >
+                            <div class="accordion-body">
+                                Placeholder content for this accordion, which is
+                                intended to demonstrate the
+                                <code>.accordion-flush</code> class. This is the
+                                first item's accordion body.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingTwo">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseTwo"
+                                aria-expanded="false"
+                                aria-controls="flush-collapseTwo"
+                            >
+                                Accordion Item #2
+                            </button>
+                        </h2>
+                        <div
+                            id="flush-collapseTwo"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingTwo"
+                            data-bs-parent="#accordionFlushExample"
+                        >
+                            <div class="accordion-body">
+                                Placeholder content for this accordion, which is
+                                intended to demonstrate the
+                                <code>.accordion-flush</code> class. This is the
+                                second item's accordion body. Let's imagine this
+                                being filled with some actual content.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="flush-headingThree">
+                            <button
+                                class="accordion-button collapsed"
+                                type="button"
+                                data-bs-toggle="collapse"
+                                data-bs-target="#flush-collapseThree"
+                                aria-expanded="false"
+                                aria-controls="flush-collapseThree"
+                            >
+                                Accordion Item #3
+                            </button>
+                        </h2>
+                        <div
+                            id="flush-collapseThree"
+                            class="accordion-collapse collapse"
+                            aria-labelledby="flush-headingThree"
+                            data-bs-parent="#accordionFlushExample"
+                        >
+                            <div class="accordion-body">
+                                Placeholder content for this accordion, which is
+                                intended to demonstrate the
+                                <code>.accordion-flush</code> class. This is the
+                                third item's accordion body. Nothing more
+                                exciting happening here in terms of content, but
+                                just filling up the space to make it look, at
+                                least at first glance, a bit more representative
+                                of how this would look in a real-world
+                                application.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="p-5 bg-primary">
+            <div class="container">
+                <h2 class="text-center text-light">开发团队</h2>
+                <p class="lead text-center text-white mb-5">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Hic, unde?
+                </p>
+                <div class="row g-4">
+                    <div class="col-md-4 col-lg-4">
+                        
+                    </div>
+                    <div class="col-md-4 col-lg-4">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                
+                                <img src="..\static\images\icon.jpg" class="mb-3 rounded-circle"/>
+                                <h3 class="card-title">zyc</h3>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Accusamus, ratione!
+                                </p>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-lg-4">
+                        
+                    </div>
+
+
+                    <!--
+                    <div class="col-md-6 col-lg-3">
+                        
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                
+                                <img src="img/01-man.jpeg" class="mb-3 rounded-circle"/>
+                                <h3 class="card-title">张三</h3>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Accusamus, ratione!
+                                </p>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                <img src="#" class="mb-3 rounded-circle"/>
+                                <h3 class="card-title">张三</h3>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Accusamus, ratione!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                <img src="#" class="mb-3 rounded-circle"/>
+                                <h3 class="card-title">张三</h3>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Accusamus, ratione!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <div class="card bg-light">
+                            <div class="card-body text-center">
+                                <img src="#" class="mb-3 rounded-circle"/>
+                                <h3 class="card-title">张三</h3>
+                                <p class="card-text">
+                                    Lorem ipsum dolor sit amet consectetur
+                                    adipisicing elit. Accusamus, ratione!
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    -->
+                </div>
+            </div>
+        </section>
+
+        <section class="p-5">
+            <div class="container">
+                <h2 class="text-center mb-4">联系我们</h2>
+
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">电话：120XXXXXX</li>
+                    <li class="list-group-item">邮箱：21307140018@m.fudan.edu.cn</li>
+                    <li class="list-group-item">地址：上海市杨浦区</li>
+                  </ul>
+            </div>
+        </section>
+
+        <footer class="p-5 bg-dark text-white text-center">
+            <div class="container">
+                <p class="lead">Copyright &copy; 2022 SecurAity</p>
+            </div>
+        </footer>
+
+        <script
+            src="../static/js/bootstrap/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"
+        ></script>
+    </body>
+</html>
