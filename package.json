@@ -1,0 +1,27 @@
+{
+    "name": "SecurAity_bbs",
+    "version": "1.0.0",
+    "description": "learn koa2",
+    "main": "app.js",
+    "scripts": {
+        "start": "node --use_strict app.js"
+    },
+    "keywords": [
+        "koa",
+        "async"
+    ],
+    "author": "Zhang yc",
+    "license": "Apache-2.0",
+    "repository": {
+        "type": "git",
+        "url": "#"
+    },
+    "dependencies": {
+        "koa": "2.0.0",
+        "koa-bodyparser": "3.2.0",
+        "koa-router": "7.0.0",
+        "nunjucks": "2.4.2",
+        "mime": "1.3.4",
+        "mz": "2.4.0"
+    }
+}
