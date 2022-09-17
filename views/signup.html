@@ -9,21 +9,21 @@
 </head>
 <body>
     <div class="box">
-        <h2>Login</h2>
+        <h2>Sign up</h2>
         <form action="/signin" method="post">
             <div class="input-box">
-                <label>账号</label>
+                <label>请输入复旦邮箱地址</label>
                 <input type="Email" name="Email" placeholder="Email">
             </div>
             <div class="input-box">
-                <label>密码</label>
-                <input type="Password" name="Password" placeholder="Password">
+                <label>验证码</label>
+                <input type="Password" name="Password" placeholder="Password" id="verify">
             </div>
             <div class="btn-box">
                 <a href="#" class="a" id="forgetPassword">忘记密码？</a>
                 <div>
-                    <button type="submit" class="button">登录</button>
-                    <a href="/signup" class="button" id="signup">注册</a>
+                    <button type="submit" class="button">注册</button>
+                    <a href="/signin" class="button" id="signup">返回</a>
                 </div>
             </div>
         </form>
