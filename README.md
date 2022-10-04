@@ -8,7 +8,4 @@ it's quite plain now. I'm still working.（Mostly because I need to spend time d
 
 Technology Stack： html + css + bootstrap + javascript + nodejs + koa + websocket + vue
 
-卧槽我都两个礼拜没搞了，唉没想到学校里这么忙。最近突然又有干劲了，好好努力一下吧。
-被ajax和javascript卡住了，不敢保证需要多久才能学会啊。
-
-现在是2022/10/4/3:29 ，xs，一时兴起。搞定了发送邮箱验证功能。明天再上传服务器，困了。
+修改并不会同步上传服务器，因此网页内容展示可能会滞后。
