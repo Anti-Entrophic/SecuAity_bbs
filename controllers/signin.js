@@ -13,6 +13,7 @@ var fn_signin = async (ctx, next) => {
     }
 };
 
+//在signin.html界面，点击注册，跳转到注册页面
 var fn_signup = async (ctx, next) => {
     console.log("someone is going to signup");
     ctx.render('signup.html', {

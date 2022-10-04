@@ -1,27 +1,32 @@
 {
-    "name": "SecurAity_bbs",
+    "name": "ws-with-koa",
     "version": "1.0.0",
-    "description": "learn koa2",
+    "description": "websocket with koa integration",
     "main": "app.js",
     "scripts": {
         "start": "node --use_strict app.js"
     },
     "keywords": [
+        "websocket",
+        "ws",
         "koa",
-        "async"
+        "async",
+        "nunjucks"
     ],
-    "author": "Zhang yc",
+    "author": "Michael Liao",
     "license": "Apache-2.0",
     "repository": {
         "type": "git",
-        "url": "#"
+        "url": "https://github.com/michaelliao/learn-javascript.git"
     },
     "dependencies": {
         "koa": "2.0.0",
         "koa-bodyparser": "3.2.0",
         "koa-router": "7.0.0",
-        "nunjucks": "2.4.2",
         "mime": "1.3.4",
-        "mz": "2.4.0"
+        "mz": "2.4.0",
+        "nodemailer": "6.8.0",
+        "nunjucks": "2.4.2",
+        "ws": "1.1.1"
     }
 }

@@ -13,5 +13,5 @@ var fn_index = async (ctx, next) => {
 
 module.exports = {
     'GET /': fn_index,
-    'GET /signin': fn_gotoSignin
+    'GET /signin': fn_gotoSignin,
 };

@@ -1,3 +1,25 @@
+<!--
+                   _ooOoo_
+                  o8888888o
+                  88" . "88
+                  (| -_- |)
+                  O\  =  /O
+               ____/`---'\____
+             .'  \\|     |//  `.
+            /  \\|||  :  |||//  \
+           /  _||||| -:- |||||-  \
+           |   | \\\  -  /// |   |
+           | \_|  ''\---/''  |   |
+           \  .-\__  `-`  ___/-. /
+         ___`. .'  /--.--\  `. . __
+      ."" '<  `.___\_<|>_/___.'  >'"".
+     | | :  `- \`.;`\ _ /`;.`/ - ` : | |
+     \  \ `-.   \_ __\ /__ _/   .-` /  /
+======`-.____`-.___\_____/___.-`____.-'======
+                   `=---='
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    佛祖保佑       永不宕机     永无BUG
+-->
 <!DOCTYPE html>
 <html lang="zh-CN">
 <head>
@@ -6,18 +28,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign in</title>
     <link rel="stylesheet" href="../static/css/signin.css">
+    <script>
+        //页面初始化完成后即执行该函数
+        window.onload = function () {  
+            //发送验证码功能
+            var getVerify = document.getElementById("getVerify");
+            console.log("Load successfully : \n" + getVerify);
+            getVerify.onclick = function () {
+                //获取已填写的邮箱地址
+                var emailAdress = document.getElementById("Email").value;
+                if (emailAdress === "") {
+                    alert("请输入邮箱地址");
+                }
+                //后缀必须要是m.fudan.edu.cn(14个)或者fudan.edu.cn(12个)
+                else if (emailAdress.substring(emailAdress.length - 14) != "m.fudan.edu.cn" && 
+                        emailAdress.substring(emailAdress.length - 12) != "fudan.edu.cn") {
+                    alert("必须要是复旦邮箱");
+                }
+                //发送验证码
+                else {
+                    var xhr = new XMLHttpRequest(); 
+                    //向服务器发送请求：GET /send_email ，当然这个请求会由koa处理
+                    var url = "/send_email?email=" + emailAdress; 
+                    xhr.open("GET", url, false);  
+                    xhr.send(null);  //发送请求
+                    alert("验证码已发送至" + emailAdress);
+                }
+            }
+        }
+    </script>
 </head>
 <body>
     <div class="box">
         <h2>Sign up</h2>
         <form action="/signin" method="post">
             <div class="input-box">
-                <label>请输入复旦邮箱地址</label>
-                <input type="Email" name="Email" placeholder="Email">
+                <label id="label">请输入复旦邮箱地址</label>
+                <div>
+                    <input type="Email" name="Email" placeholder="Email" id="Email">
+                </div>
             </div>
             <div class="input-box">
                 <label>验证码</label>
-                <input type="Password" name="Password" placeholder="Password" id="verify">
+                <div style="display: inline">
+                    <input type="Password" name="Password" placeholder="Password" id="verify">
+                    <!--
+                        <a href="#" class="verify" id="getVerify">获取</a>
+                    -->
+                    <button type="button" class="verify" id="getVerify" onClick="getVerify();return false;">获取</button>
+                </div>
             </div>
             <div class="btn-box">
                 <a href="#" class="a" id="forgetPassword">忘记密码？</a>
