@@ -8,4 +8,6 @@ it's quite plain now. I'm still working.（Mostly because I need to spend time d
 
 Technology Stack： html + css + bootstrap + javascript + nodejs + koa + websocket + vue
 
+在sign_up.js中我隐去了个人邮箱`POP3/SMTP/IMAP`的授权码，想要用的话用自己的就行
+
 修改并不会同步上传服务器，因此网页内容展示可能会滞后。
