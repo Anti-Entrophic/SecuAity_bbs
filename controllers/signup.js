@@ -9,7 +9,7 @@ var fn_verification = async (ctx, next) => {
         secureConnection: true,
         auth: {
             user: userEmail,
-            pass: 'bicmvhhlrkujebji'  //这个是开启`POP3/SMTP/IMAP`的授权码
+            pass: '//这个是开启`POP3/SMTP/IMAP`的授权码，此处隐去。'  
         }
     })
 
