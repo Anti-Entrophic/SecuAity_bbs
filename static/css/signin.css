@@ -50,7 +50,7 @@ body {
     font-size: 13px;
 }
 
-.box .input-box > input {
+.box .input-box > div > input {
     box-sizing: border-box;
     color: rgba(255,255,255,0.9);
     font-size: 14px;
@@ -137,3 +137,42 @@ body {
 }
 
 /*获取验证码*/
+.box .input-box > div > a {
+    width: 50px;
+    height: 35px;
+    background: rgba(150, 159, 197, 0.5);
+    color: rgba(255,255,255,0.9);
+    border-radius: 5px;
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+.box .input-box > div > button {
+    width: 50px;
+    height: 35px;
+    background: rgba(150, 159, 197, 0.5);
+    color: rgba(255,255,255,0.9);
+    border-radius: 5px;
+    transition: 0.2s;
+    text-decoration: none;
+}
+
+.box .input-box > div > button:hover {
+    background: rgba(92, 97, 120, 0.5);
+    color: rgba(255,255,255,0.9);
+}
+
+.box .input-box > div #getVerify {
+    border: 1px solid rgba(150, 159, 197, 0.5);
+    box-sizing: border-box;
+    margin-left: -5px;
+    display: inline-block;
+    text-align: center;
+    align-items: flex-start;
+    text-decoration: none;
+    line-height: 31.5px;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    font-size: 14px;
+}
