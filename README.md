@@ -11,3 +11,5 @@ Technology Stack： html + css + bootstrap + javascript + nodejs + koa + websock
 在sign_up.js中我隐去了个人邮箱`POP3/SMTP/IMAP`的授权码，想要用的话用自己的就行
 
 修改并不会同步上传服务器，因此网页内容展示可能会滞后。
+
+已更新邮箱验证码功能，可以上去在注册界面试一试捏。
